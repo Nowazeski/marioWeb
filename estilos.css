@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    /* margin-top:10%; */
+}
+.game-board{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 20px solid rgb(4, 106, 8);
+    overflow: hidden;
+    background-image: linear-gradient(310deg, rgb(6, 180, 233),#3347e0);
+}
+.mario{
+    position: absolute;
+    width: 150px;
+    bottom: 0px;
+}
+.pipe{
+    width: 100px;
+    position: absolute;
+    bottom:0;
+    animation: pipe 1500ms infinite linear;
+   
+}
+.nuvem{
+    width: 500px;
+    position: absolute;
+    bottom:10;
+    animation: nuvem 40000ms infinite;
+    z-index: 2;
+}
+.nuvem2{
+    width: 400px;
+    position: absolute;
+    bottom:10;
+    animation: nuvem 50000ms infinite;
+    z-index: 2;
+}
+.nuvem3{
+    width: 450px;
+    position: absolute;
+    bottom:10;
+    animation: nuvem 30000ms infinite;
+    z-index: 2;
+}
+.nuvem4{
+    width: 500px;
+    position: absolute;
+    bottom:10;
+    animation: nuvem 90000ms infinite;
+    z-index: 2;
+}
+.nuvem5{
+    width: 400px;
+    position: absolute;
+    bottom:10;
+    animation: nuvem 70000ms infinite;
+    z-index: 2;
+}
+.nuvem6{
+    width: 450px;
+    position: absolute;
+    bottom:10;
+    animation: nuvem 80000ms infinite;
+    z-index: 2;
+}
+.sol{
+    right: 1vh;
+    position: absolute;
+    width: 250px;
+    align-items: center;
+    z-index: 1;
+
+}
+@keyframes pipe{
+    to{
+        left: -80px;
+    }
+    from{
+        left: 100%;
+    }
+}
+@keyframes nuvem{
+    to{
+        left:-500px;
+    }
+    from{
+        left:100%;
+    }
+}
+.terreno{
+    width: 100%;
+    height: 500px;
+    animation: nuvem 5000ms infinite;
+}
+.jump{
+    animation: jump 500ms ease-out;
+}
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+    10%{
+        bottom: 20px;
+    }
+    20%{
+        bottom: 40px;
+    }
+    30%{
+        bottom: 80px;
+    }
+    35%{
+        bottom: 100px;
+    }
+    40%{
+        bottom: 140px;
+    }
+    45%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    75%{
+        bottom: 180px;
+    }
+    80%{
+        bottom: 100px;
+    }
+    95%{
+        bottom: 50px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
